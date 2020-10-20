@@ -5,11 +5,16 @@
         font-family: system-ui;
     }
     
+    .icon img {
+        height: 32px;
+        margin: 16px;
+    }
+    
     header {
         width: 100%;
         box-shadow: 0px 2px 7px #b5b5;
         background-color: rgb(255 255 240);
-        height: 70px;
+        height: 65px;
         position: fixed;
     }
     
@@ -18,11 +23,12 @@
         padding-left: 20px;
         color: #000000;
     }
+    
     .btn {
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
-        margin-top: -25px;
+        margin-top: -45px;
     }
     
     .btn div input {
@@ -40,13 +46,44 @@
         margin-right: 20px;
     }
     /* header responsive 600px below*/
-   
+    @media screen and (max-width:600px){
+        header{
+            height: 50px;
+        }
+        .ml span{
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+        }
+        .icon>img{
+            padding-top:5px;
+            padding-left: 20px;
+            margin-top: -40px;
+            height: 30px;
+        }
+        .btn {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 0px;
+            margin-top: -45px;
+        }
+        .btn div input {
+            margin: 2px 1px;
+            padding: 3px 20px;
+        }
+        #sign-in {
+            margin-right: 10px;
+        }
+    }
     /* header responsive end*/
     
     .navbar {
         width: 100%;
         font-family: sans-serif;
-        padding-top: 110px;
+        padding-top: 108px;
         height: 40px;
         box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
     }
@@ -90,6 +127,7 @@
         text-decoration: none;
         color: blue
     }
+    
     .lst-item>ul>li:hover {
         background-color: lightgray;
     }
@@ -97,33 +135,42 @@
     .lst-item:hover>a>i {
         transform: rotate(-180deg);
     }
-    
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 15px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-    /* Position the "next button" to the right */
-    
-    .next {
-        right: 5px;
-        border-radius: 3px 0 0 3px;
-    }
-    /* On hover, add a black background color with a little bit see-through */
-    
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8)
+    /* header bottom list item responsive code is here*/
+    @media screen and (max-width:600px){
+        #navbar1{
+            padding-top: 95px;
+        }
+        .lst-item>a {
+            font-size: 2.8vw;
+        }
+        .imgslide img{
+            height: 150px;
+        }
+        #card-container {
+            padding-top: 20%;
+            padding-left: 1%;
+        }
+        .card {
+            margin: 5.5px;
+            padding: 0px;
+            min-width: 90%;
+            height: 20px;
+        }
+        #card1{
+            height: 200px;
+        }
+
+        .card h3 {
+
+            margin: 0px;
+            font-size: 3.6vw;
+            
+        }
+        .card img {
+            height: 50px;
+            margin: 0% auto;
+
+        }
     }
     
     .clearfix {
@@ -131,6 +178,7 @@
     }
     
     .body {
+        overflow: hidden;
         width: 100%;
         padding: 5px 5px 0px 5px;
         background-color: ivory;
@@ -141,47 +189,83 @@
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        padding-left: 140px;
         margin-top: -100px;
         justify-content: center;
         align-items: center;
     }
     
     .card {
-        width: 270px;
-        height: 270px;
+        overflow: hidden;
+        width: 66%;
+        height: 235px;
         box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
-        margin: 20px 70px;
         border-radius: 6px;
         background-color: ivory;
-        display: grid;
         align-items: center;
         text-align: center;
     }
     
     .card img {
         height: 70px;
-        margin: 30px auto;
+        margin: 14% auto;
     }
     
     .card h3 {
-        margin: 0px auto;
+        margin: 2% auto;
     }
     
     .card p {
-        margin: 17px 40px;
-        height: inherit;
+        height:20px;
     }
     /* information card sestion End */
     /* Course Section */
-    
     .course-H {
         text-align: center;
         height: 70px;
         margin: 50px;
     }
     
+    @media screen and (max-width:600px){
+        #cs-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #cs-card{
+            max-width: 170px;
+            margin: 8px 8px 14px 14px;
+            height: 220px;
+            border-radius: 3px;
+        }
+        .course-container div img {
+            height: auto;
+            max-width: 170px;
+        }
+        #cs-container div h2 {
+            margin: 4px;
+            font-size: 1.2rem;
+            background-color: white;
+            text-align: center;
+        }
+        #cs-container div input {
+            margin: 12px 3px;
+            padding: 6px 53px 8px 50px;
+            
+        }
+        #cs-card p{
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
+            padding:5px;
+        }
+        #cs-card p >ins{
+            color: green;
+        }
+        
+    }
+
     .course-card {
         box-shadow: rgb(174, 172, 172) 0px 0px 10px;
         outline: 1px solid #d6d6d6;
@@ -214,12 +298,37 @@
     
     .course-container {
         display: grid;
-        grid-template-columns: repeat(4, 300px);
+        grid-template-columns: repeat(4, 1fr);
         justify-content: center;
+    }
+    #cs-card p{
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
+        padding:5px;
+    }
+    #cs-card p >ins{
+        color: green;
     }
     /* Course Section End*/
     /* job section start */
-    
+    @media screen and (max-width:600px){
+
+        #job-section {
+            padding: 50px 0px;  
+        }
+        #job-card1{
+            padding: 5px;
+            margin: 10px 0px;
+        }
+        #job-card1 img{
+            margin-top: 50px;
+            margin-left: 5px;
+            width:80%;
+        }
+        
+    }
+
     .job-section {
         height: fit-content;
         display: grid;
@@ -228,9 +337,6 @@
     }
     
     .job-card {
-        width: 40%;
-        height: auto;
-
         padding: 20px;
     }
     
@@ -247,13 +353,15 @@
     .job-card img {
         margin-top: 10px;
         margin-left: 130px;
+        height: 30vw;
+        width: auto;
     }
     
     .job-detail h2 {
         color: #f99977;
         font-size: 2rem;
         margin: auto;
-        text-align: left;
+        text-align:center;
     }
     
     .job-detail p {
@@ -263,7 +371,7 @@
     }
     
     .job-btn {
-        margin-top: 15px;
+        margin: 25px;
         padding: 15px 19px;
         background-color: #f99977;
         border-radius: 6px;
@@ -280,6 +388,16 @@
     }
     /* notes Section end */
     /*subject details*/
+
+    @media screen and (max-width:600px){
+        #sub-detail  {
+        height: 120px;
+        }
+        #sub-heading h1{
+            margin-left: 120px;
+            font-size: 4vw;
+        }
+    }
     
     .sub-detail {
         width: 100%;
@@ -301,6 +419,16 @@
         margin: 20px 0px 0px 0px;
     }
     /* subject section start  */
+
+    @media screen and (max-width:600px){
+        .subjects{
+        
+            overflow-x: auto;
+        }
+        .subjects::-webkit-scrollbar{
+            width:0px;
+        }
+    }
     
     .Subject-section {
         margin-bottom: 50px;
@@ -310,7 +438,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: -10px;
-        height: 130px;
+        height: 142px;
         text-align: center;
     }
     
@@ -344,6 +472,22 @@
     }
     /* subject section End  */
     /* footer section start  */
+    @media screen and (max-width:600px){
+        #wave{
+            margin: -3px  auto;
+        }
+        #footer-part1 img{ 
+            height: 20px;
+            margin: 5px 0px;
+        }
+        #footer-part1 h3{
+            font-size: 5vw;
+        }
+        #footer-list{
+            max-width: 33.5;
+            float: left;
+        }
+    }
     
     .footer-top {
         font-family: sans-serif;
@@ -354,17 +498,16 @@
     
     .wave {
         margin: -25px auto;
-        color: gray;
-        fill: gray;
+        fill: #ffd4a9;
     }
     
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        background-color: gray;
+        background-color: #ffd4a9;
         margin-top: -1px;
         padding-top: 10px;
-        color: #ffffff;
+        color: #524943;
     }
     
     .footer-part-1 {
@@ -373,13 +516,13 @@
     }
     
     .footer-part-1 img {
-        height: 60px;
-        margin: 30px auto;
+        height: 50px;
+        margin: 20px 0px;
     }
     
     .footerbox h3 {
         margin: 10px 0px;
-        color: #f99977;
+        color: #ff914d;
     }
     
     .footer-part-4 {
@@ -406,7 +549,7 @@
         border-radius: 6px;
         border-style: none;
         color: white;
-        background-color: #f99977;
+        background-color: #ff914d;
         margin: 2px 0px
     }
     
@@ -421,7 +564,7 @@
     
     .footer-list li a {
         text-decoration: none;
-        color: #ffffff;
+        color: #524943;
     }
     /* copy right section  */
     
