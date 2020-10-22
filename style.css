@@ -6,16 +6,25 @@
     }
     
     .icon img {
-        height: 32px;
-        margin: 16px;
+        height: 29px;
+        position: absolute;
+        margin-left: 46px;
+        margin-top: -1px;
+}
     }
     
-    header {
+    .header{
         width: 100%;
         box-shadow: 0px 2px 7px #b5b5;
         background-color: rgb(255 255 240);
         height: 65px;
         position: fixed;
+    }
+    .ml span{
+        display: inline-block;
+        margin-top: 14px;
+        font-size: 25px;
+        margin-left: 10px;
     }
     
     .icon>h2 {
@@ -25,15 +34,16 @@
     }
     
     .btn {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20px;
-        margin-top: -45px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: -28px;
     }
     
     .btn div input {
         margin: -2px 1px;
         padding: 6px 40px;
+        position: arelative;
         background-color: #f99977;
         border-radius: 6px;
         box-shadow: #f9997773 0px 1px 4px;
@@ -47,28 +57,28 @@
     }
     /* header responsive 600px below*/
     @media screen and (max-width:600px){
-        header{
+        .header{
             height: 50px;
         }
-        .ml span{
+        #ml span{
             display: inline-block;
-            margin-top: 10px;
-            margin-left: 5px;
+            margin-top: 15px;
+            margin-left: 10px;
             font-size: 20px;
             font-weight: bold;
             color: #000000;
         }
         .icon>img{
             padding-top:5px;
-            padding-left: 20px;
-            margin-top: -40px;
+            margin-left: 40px;
+            margin-top: -5px;
             height: 30px;
         }
         .btn {
             display: flex;
             justify-content: flex-end;
             margin-right: 0px;
-            margin-top: -45px;
+            margin-top: -25px;
         }
         .btn div input {
             margin: 2px 1px;
@@ -83,7 +93,8 @@
     .navbar {
         width: 100%;
         font-family: sans-serif;
-        padding-top: 108px;
+        padding-top: 50px;
+        margin-top: 12px;
         height: 40px;
         box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
     }
@@ -131,17 +142,17 @@
     .lst-item>ul>li:hover {
         background-color: lightgray;
     }
-    
     .lst-item:hover>a>i {
         transform: rotate(-180deg);
     }
+    
     /* header bottom list item responsive code is here*/
     @media screen and (max-width:600px){
         #navbar1{
-            padding-top: 95px;
+            padding-top: 45px;
         }
         .lst-item>a {
-            font-size: 2.8vw;
+            font-size: 3.2vw;
         }
         .imgslide img{
             height: 150px;
@@ -151,25 +162,29 @@
             padding-left: 1%;
         }
         .card {
-            margin: 5.5px;
+            margin: 4s.5px;
             padding: 0px;
             min-width: 90%;
             height: 20px;
         }
         #card1{
-            height: 200px;
+            height: 170px;
         }
 
         .card h3 {
 
             margin: 0px;
-            font-size: 3.6vw;
+            font-size: 3.5vw;
             
         }
-        .card img {
+        #card1 img {
             height: 50px;
-            margin: 0% auto;
+            margin: 14% auto;
 
+        }
+        #lst-item>ul{
+            padding-left: 0px;
+            margin-left: 0px;
         }
     }
     
@@ -224,7 +239,7 @@
     /* Course Section */
     .course-H {
         text-align: center;
-        height: 70px;
+        height: 25px;
         margin: 50px;
     }
     
@@ -234,14 +249,14 @@
             grid-template-columns: repeat(2, 1fr);
         }
         #cs-card{
-            max-width: 170px;
-            margin: 8px 8px 14px 14px;
-            height: 220px;
-            border-radius: 3px;
+            max-width: 160px;
+            margin: 8px 8px 14px 8px;
+            height: 210px;
+            border-radius: 8px;
         }
         .course-container div img {
             height: auto;
-            max-width: 170px;
+            max-width: 160px;
         }
         #cs-container div h2 {
             margin: 4px;
@@ -250,8 +265,8 @@
             text-align: center;
         }
         #cs-container div input {
-            margin: 12px 3px;
-            padding: 6px 53px 8px 50px;
+            margin: 9px 3px;
+            padding: 6px 44px 8px 50px;
             
         }
         #cs-card p{
@@ -315,18 +330,40 @@
     @media screen and (max-width:600px){
 
         #job-section {
-            padding: 50px 0px;  
+            padding: 10px 2px;  
         }
         #job-card1{
-            padding: 5px;
+            padding: 10px;
             margin: 10px 0px;
+        }
+        #job-card1 p{
+            color: #000000;
+            font-weight: 600;
         }
         #job-card1 img{
             margin-top: 50px;
             margin-left: 5px;
             width:80%;
         }
-        
+        #job-card3 img{
+            margin-top: 50px;
+            margin-left: 15px;
+            width:100%;
+        }
+        #job-card1 h2{
+            font-size: 5vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serifs;
+            color: #000000;
+        }   
+        #new2021 >.c2021{
+            width:100%;
+            height: 75px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius:8px;
+
+        }
+
     }
 
     .job-section {
@@ -340,9 +377,10 @@
         padding: 20px;
     }
     
+    
     .job-detail {
         background-color: white;
-        box-shadow: 0px 0px 15px rgb(174, 172, 172);
+        box-shadow: 0px 0px 4px rgb(174, 172, 172);
         margin: 20px 70px;
         padding: 110px 45px 0px 45px;
         justify-content: center;
@@ -446,6 +484,7 @@
         margin: 8px 10px;
         box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
+        background-color: #ffffff;
     }
     
     .subject-card img {
@@ -478,17 +517,38 @@
         }
         #footer-part1 img{ 
             height: 20px;
-            margin: 5px 0px;
+            margin: 0px 15px;
+            margin-top: 22px;
+            position: absolute;
+        }
+        #footer-part1{
+            margin-left: 0px;
+            margin-top: -20px;
+            padding: 0px;
         }
         #footer-part1 h3{
+            margin-top: 70px;
+            text-align: center;
+            margin-left: -21px;
             font-size: 5vw;
         }
+        #footer-part1 p{
+            margin-top: -10px;
+            margin-left: 21px;
+        }
+        
         #footer-list{
             max-width: 33.5;
             float: left;
         }
+        #footer-part2 , #footer-part3{
+            padding: 40px 13px;
+            font-size: 4vw;
+        }
+        #footer-part4{
+            display: none;
+        }
     }
-    
     .footer-top {
         font-family: sans-serif;
         font-size: 1vw;

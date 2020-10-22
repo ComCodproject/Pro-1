@@ -30,10 +30,12 @@ function clickcourses(){
         click1.style.marginLeft="80px"
         click1.style.boxShadow="2px 2px 4px #000000";
         click1.style.borderRadius=" 0px 8px 0px 8px";
+
         
     }
     else{
         click1.style.display = "none";
+
     }
 }
 

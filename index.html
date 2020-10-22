@@ -13,9 +13,9 @@
 <body>
     <div class="container">
 
-        <header>
+        <header class="header">
 
-            <div class="ml">
+            <div class="ml" id="ml">
                 <span class="menulines" onclick="opennav()">&#9776</span>
             </div>
 
@@ -39,8 +39,8 @@
         </header>
         <div class="navbar" id="navbar1">
             <ul class="menuitem">
-                <li class="lst-item"><a href="#">Home</a></li>
-                <li class="lst-item"><a href="#" onclick="clickcourses()">All Courses &nbsp <i class="fa fa-caret-down"></i></a>
+                <li class="lst-item" id="lst1-item"><a href="#">Home</a></li>
+                <li class="lst-item" id="lst-item"><a href="#" onclick="clickcourses()" onclick="clickon()">Courses &nbsp <i class="fa fa-caret-down" id="in"></i></a>
                     <ul id="course-item">
                         <li><a href="#">Course1</a></li>
                         <li><a href="#">Course2</a></li>
@@ -49,7 +49,7 @@
                         <li><a href="#">Course5</a></li>
                     </ul>
                 </li>
-                <li class="lst-item"><a onclick="clickjobs()">Jobs &nbsp<i class="fa fa-caret-down"></i></a>
+                <li class="lst-item" id="ls-item"><a onclick="clickjobs()">Jobs &nbsp<i class="fa fa-caret-down"></i></a>
                     <ul style="display: none" ; id="job-item">
                         <li><a href="#">Course1</a></li>
                         <li><a href="#">Course2</a></li>
@@ -92,8 +92,8 @@
             <!-- information card End  -->
             <section class="Courses-section">
                 <div class="course-H">
-                    <h1>Our Most Populer Courses</h1>
-                    <p>Course Details takes here</p>
+                    <h1>Most Populer Courses</h1>
+                    
                 </div>
                 <div class="course-container" id="cs-container">
                     <div class="course-card" id="cs-card">
@@ -148,6 +148,11 @@
                 </div>
             </section>
 
+            
+            <div class="new2021" id="new2021">
+                <img src="img/2021.jpg" alt="2021" class="c2021">
+            </div>
+
 
             <!-- Jon section Start -->
             <section class="job-section" id="job-section">
@@ -156,26 +161,27 @@
                 </div>
                 <div class="job-card job-detail" id="job-card1">
                     <h2>Find Jobs</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    <p>All sarkari and Private Jobs here
                     </p>
                     <input class="Notes-btn job-btn" type="button" value="Explor Job" name="Explor job">
 
                 </div>
             </section>
 
+            
             <!-- Jon section End -->
 
             <!-- notes-section Start  -->
 
             <section class="job-section Notes-section">
-                <div class="job-card job-detail" id="job-card1">
+                <div class="job-card job-detail" id="job-card1" >
                     <h2>Subject Notes</h2>
-                    <p>Lorem ipsum dolor sit amet,
+                    <p>All type of Notes here.
                     </p>
                     <input class="Notes-btn job-btn" type="button" value="Get Notes" name="Get Notes">
 
                 </div>
-                <div class="job-card" id="job-card1">
+                <div class="job-card" id="job-card3">
                     <img src="img/Notes.png" alt="Job-template" class="job-icon">
                 </div>
             </section>
@@ -191,6 +197,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
+        
             <!--Subject Detals/end-->
 
             <!-- subject section start  -->
@@ -231,11 +238,11 @@
             <!-- subject section End  -->
 
             <svg class="wave" id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path  d="M0,160L34.3,165.3C68.6,171,137,181,206,208C274.3,235,343,277,411,277.3C480,277,549,235,617,229.3C685.7,224,754,256,823,229.3C891.4,203,960,117,1029,112C1097.1,107,1166,181,1234,197.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-            <footer>
+            <footer id="footer">
                 <div class=" footerbox footer-part-1" id="footer-part1">
                     <img src="img/logo.png" alt="comcod">
                     <h3>About</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, reiciendis!</p>
+                    <p>Muzaffarnagar (UP).India</p>
                     <div id="footer-part1">
                         <h3>Contact us</h3>
                         <p>XXXXXXXXXXX</p>
@@ -244,7 +251,7 @@
 
 
                 </div>
-                <div class="footerbox footer-part-2">
+                <div class="footerbox footer-part-2" id="footer-part2">
                     <h3>Services</h3>
                     <ul class="footer-list" id="footer-list">
 
@@ -255,7 +262,7 @@
                         <li class="footer-item"><a href="#">Course Copens</a></li>
                     </ul>
                 </div>
-                <div class="footerbox footer-part-3">
+                <div class="footerbox footer-part-3" id="footer-part3">
                     <h3>HelpFul Links</h3>
                     <ul class="footer-list">
                         <li class="footer-item"><a href="#">Supports</a></li>
@@ -264,7 +271,7 @@
                         <li class="footer-item"><a href="#">Privacy Poilcy</a></li>
                     </ul>
                 </div>
-                <div class="footerbox footer-part-4">
+                <div class="footerbox footer-part-4" id="footer-part4">
 
                     <ul class="footer-list">
                         <li class="footer-item"><a href="#">Search more information</a></li>
