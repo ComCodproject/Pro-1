@@ -22,7 +22,7 @@
         background-color: #ffffff
     }
     .ml span{
-        display: i;nline-block;
+        display: inline-block;
         margin-top: 14px;
         font-size: 25px;
         margin-left: 10px;
@@ -646,3 +646,66 @@
         padding: 5px;
         color: #ffffff;
     }
+
+    /*job-portal page css -start*/
+
+    .row{
+
+        width: 100%;
+        display: flex;
+        padding: 3px;
+    }
+    .col-1{
+        margin-top: 50px;
+        background-color:#ffffff;
+        padding:2em;
+        width: 33.3%;
+        float: left;
+        border-radius: .3em;
+        overflow: hidden;
+    }
+    .col-1>h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .col-0{
+        
+        height: 50px;
+        padding:16px;
+        margin: 8px 0px 8px 0px;
+        color: black;
+        font-size: 1vw;
+        text-align: center;
+        border-radius: .3em;
+        box-shadow: 2px 5px 24px rgba(0,0,0,0.1);   
+    }
+    @media only screen and (max-width: 600px){
+        
+        .col-1{
+            min-width: 110px;
+        }
+        .col-1>h2{
+            font-size: 12px;
+        }
+        .col-0{
+            min-width: 120px;
+            padding: 8px;
+            text-align: left;
+            font-size: 2vw;
+            height: 30px;
+           
+        }
+    }
+    .col-0 > h3>a{
+        text-decoration: none;
+    }
+    .col-0:hover{
+        text-decoration: none;
+        border-radius: .3em;
+        border: 0.2px solid ivory;
+        box-shadow: 2px 5px 24px rgba(0,0,0,0.1);   
+    }
+    
+
+    /*end css job portal page*/
+

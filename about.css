@@ -1,0 +1,46 @@
+.story-section {
+    padding: 20px;
+}
+
+.story-section h1 {
+    text-align: center;
+    font-size: 2vw;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.story-section p {
+    text-align: center;
+    padding: 20px;
+}
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: darkgrey 0px 0px 12px;
+    margin: 10px;
+}
+
+.team-card img {
+    height: 12vw;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.our-team {
+    text-align: center;
+    font-size: 2vw;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+.team-card p {
+    padding: 20px;
+    text-align: center;
+}
