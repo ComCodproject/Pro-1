@@ -147,6 +147,9 @@
 .job-element p {}
 
 @media screen and (max-width:600px) {
+    #contact-form{
+    display:inline block;
+    }
     .job-grid-container {
         grid-template-columns: 1fr;
     }
